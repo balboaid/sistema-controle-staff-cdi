@@ -2,7 +2,57 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #336BB4;
+}
+
+.bg-cdiBlue {
+  background-color: #336BB4;
+}
+
+.text-cdiBlue {
+  color: #ffffff;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white shadow-md rounded-lg overflow-hidden p-6;
+  }
+}
+
+@layer components {
+  .input {
+    @apply border border-gray-300 rounded-md p-2;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow p-6;
+  }
+}
+
+@layer components {
+  .table {
+    @apply w-full border border-gray-200 rounded-lg overflow-hidden;
+  }
+}
+
+@layer components {
+  .th, .td {
+    @apply px-4 py-2 border-b border-gray-200 text-sm;
+  }
+}
+
+@layer components {
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs bg-gray-100;
+  }
 }
 
 @theme inline {
@@ -14,7 +64,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #336BB4;
     --foreground: #ededed;
   }
 }
@@ -22,5 +72,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
 }

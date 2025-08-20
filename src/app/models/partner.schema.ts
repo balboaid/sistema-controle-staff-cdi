@@ -1,0 +1,11 @@
+import { z } from "zod";
+
+export const PartnerSchema = z.object({
+  id: z.string().optional(),
+  nome: z.string().min(1, "Nome é obrigatório"),
+  empresa: z.string().optional(),
+  email: z.string().email("Email inválido"),
+  telefone: z.string().optional(),
+});
+
+export type Partner = z.infer<typeof PartnerSchema>;
