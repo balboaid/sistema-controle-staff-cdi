@@ -5,9 +5,16 @@
   --foreground: #336BB4;
 }
 
-.bg-cdiBlue {
-  background-color: #336BB4;
+/* Form settings */
+::placeholder {
+  color: #a3abbb;
 }
+
+input {
+  color: #000000;
+}
+
+/* Text settings */
 
 .text-cdiBlue {
   color: #ffffff;

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
@@ -24,23 +25,36 @@ export default function LoginPage() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow-md w-80">
-        <h1 className="text-xl text-black font-bold mb-4">Login</h1>
+      <form onSubmit={handleSubmit} className="bg-white p-10 rounded shadow-md w-110">
+        <div className="logoCDI">
+          <Image src="/images/logo-Casa-do-Ingresso-blue.svg" alt="Logo Casa do Ingresso" width={290} className="mb-10" height={21} />
+        </div>
+        <h1 className="text-4xl text-black font-bold mb-7">
+          Login
+        </h1>
+        <label htmlFor="username" className="block text-lg font-medium text-gray-700 mb-2">
+          Usuário
+        </label>
         <input
           type="text"
-          placeholder="Usuário"
+          placeholder="Nome de Usuário"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="border p-2 mb-3 w-full"
+          onFocus={(e) => e.target.placeholder = ''}
+          className="border p-2 mb-3 w-full border-gray-400 bg-[#FCFCFC] mb-4"
         />
+        <label htmlFor="password" className="block text-lg font-medium text-gray-700 mb-2">
+          Senha
+        </label>
         <input
           type="password"
-          placeholder="Senha"
+          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="border p-2 mb-3 w-full"
+          onFocus={(e) => e.target.placeholder = ''}
+          className="border p-2 mb-10 w-full border-gray-400 bg-[#FCFCFC] mb-4"
         />
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded w-full">
+        <button type="submit" className="bg-black text-white p-2 rounded w-full hover:bg-[#336BB4]">
           Entrar
         </button>
       </form>
