@@ -27,7 +27,9 @@ export default function Sidebar(){
   return (
     <aside className="w-108 min-h-screen bg-cdiBlue text-white p-10">
       <div className="logoCDI">
-        <Image src="/images/logo-Casa-do-Ingresso.svg" alt="Logo Casa do Ingresso" width={290} className="mb-10" height={21} />
+        <Link href="/">
+          <Image src="/images/logo-Casa-do-Ingresso.svg" alt="Logo Casa do Ingresso" width={290} className="mb-10" height={21} />
+        </Link>
       </div>
       <nav className="space-y-1">
         {items.map(i => (
