@@ -62,7 +62,11 @@ input {
 
 @layer components {
   .card {
-    @apply bg-white shadow-md rounded-lg overflow-hidden p-6;
+    @apply bg-white border-2 border-white shadow-lg rounded-lg overflow-hidden p-6;
+  }
+
+  .card:hover {
+    @apply shadow-xl bg-[#f6f6f6a9] border-2 border-white;
   }
 }
 
@@ -72,11 +76,6 @@ input {
   }
 }
 
-@layer components {
-  .card {
-    @apply bg-white rounded-lg shadow p-6;
-  }
-}
 
 @layer components {
   .table {

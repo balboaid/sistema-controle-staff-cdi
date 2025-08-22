@@ -8,7 +8,7 @@ export default function AppShell({ title, children }: { title: string, children:
       <Sidebar />
       <main className="flex-1">
         <Navbar />
-        <div className="p-6">
+        <div className="p-10">
           <div className="text-sm text-gray-500 mb-6">Painel &gt; {title}</div>
           <h1 className="text-2xl font-bold mb-4 text-black">{title}</h1>
           {children}

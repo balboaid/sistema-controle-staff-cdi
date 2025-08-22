@@ -12,8 +12,8 @@ export default function Navbar(){
   }
 
   return (
-    <header className="w-full border-b bg-white pl-3 pt-5 pb-5">
-      <div className="mx-auto max-w-8xl px-4 py-3 flex items-center justify-between">
+    <header className="w-full border-b bg-white p-10">
+      <div className="mx-auto max-w-8xl flex items-center justify-between">
         <div className="font-semibold text-black">Sistema Controle Staff CDI</div>
         <div className="flex items-center gap-3">
           <input className="input w-160 border-1 border-gray-500" placeholder="Buscar..." />

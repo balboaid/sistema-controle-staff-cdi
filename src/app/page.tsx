@@ -20,10 +20,10 @@ export default function Home(){
       <p className="text-md text-black mb-6">Selecione a função que deseja executar</p>
       <div className="grid max-w-220 h-100 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {tiles.map(t => (
-          <Link key={t.href} href={t.href} className="card text-center hover:shadow-md">
+          <Link key={t.href} href={t.href} className="card text-center">
             <div>
               <div className="mt-8 mb-3">{t.icon}</div>
-              <div className="font-semibold text-black">{t.label}</div>
+              <div className="font-semibold text-black text-lg">{t.label}</div>
             </div>
           </Link>
         ))}
