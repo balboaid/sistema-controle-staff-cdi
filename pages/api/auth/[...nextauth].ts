@@ -1,6 +1,5 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import bcrypt from "bcryptjs";
 
 export default NextAuth({
   providers: [
@@ -14,12 +13,11 @@ export default NextAuth({
         if (!credentials) return null;
 
         const username = process.env.ADMIN_USERNAME;
-        const passwordHash = process.env.ADMIN_PASSWORD_HASH;
+        const password = process.env.ADMIN_PASSWORD;
 
         if (
           credentials.username === username &&
-          // When using BCrypt - bcrypt.compareSync(credentials.password, passwordHash || "")
-          credentials.password === process.env.ADMIN_PASSWORD
+          credentials.password === password
         ) {
           return { id: "1", name: username };
         }
