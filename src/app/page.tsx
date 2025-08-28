@@ -6,6 +6,10 @@ import CelebrationIcon from "@mui/icons-material/Celebration";
 import DataExplorationIcon from "@mui/icons-material/DataExploration";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
+export const metadata = {
+  title: 'Casa do Ingresso - Sistema Staff'
+}
+
 export default function Home(){
   const tiles = [
     { href: '/operacional', label: 'Operacional', icon: <PeopleIcon fontSize="large" color="primary" /> },

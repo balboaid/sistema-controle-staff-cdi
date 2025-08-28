@@ -4,6 +4,10 @@ import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Casa do Ingresso - Sistema Staff'
+}
+
 export default function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

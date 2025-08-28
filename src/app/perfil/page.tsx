@@ -1,5 +1,9 @@
 import AppShell from '@/app/components/AppShell';
 
+export const metadata = {
+  title: 'Casa do Ingresso - Sistema Staff'
+}
+
 export default function PerfilPage(){
   return (
     <AppShell title="Perfil">

@@ -16,10 +16,10 @@ const items = [
   { href: "/operacional", label: "Operacional", icon: <PeopleIcon /> },
   { href: "/parceiros", label: "Parceiros", icon: <HandshakeIcon /> },
   { href: "/eventos", label: "Eventos", icon: <CelebrationIcon /> },
-  { href: "/cruzamentos", label: "Cruzamento Consulta (Pós)", icon: <DataExplorationIcon /> },
-  { href: "/cruzamentos", label: "Cruzamento Contratação (Pré)", icon: <DataSaverOnIcon /> },
+  { href: "/cruzamentos-pos", label: "Cruzamento Consulta (Pós)", icon: <DataExplorationIcon /> },
+  { href: "/cruzamentos-pre", label: "Cruzamento Contratação (Pré)", icon: <DataSaverOnIcon /> },
   { href: "/perfil", label: "Perfil", icon: <AccountBoxIcon /> },
-  { href: "https://casadoingresso.com", label: "Site Oficial", icon: <LaunchIcon /> },
+  { href: "https://casadoingresso.com/", target: "_blank", label: "Site Oficial", icon: <LaunchIcon /> },
 ];
 
 export default function Sidebar(){
@@ -33,7 +33,7 @@ export default function Sidebar(){
       </div>
       <nav className="space-y-1">
         {items.map(i => (
-          <Link key={i.href} href={i.href} className={`block px-3 py-2 rounded ${pathname===i.href? "bg-white/20" : "hover:bg-white/10"}`}>{i.icon} <span className="ml-2">{i.label}</span></Link>
+          <Link key={i.href} href={i.href} target={i.target} className={`block px-3 py-2 rounded ${pathname===i.href? "bg-white/20" : "hover:bg-white/10"}`}>{i.icon} <span className="ml-2">{i.label}</span></Link>
         ))}
       </nav>
     </aside>

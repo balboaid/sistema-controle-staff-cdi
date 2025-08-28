@@ -1,5 +1,9 @@
 import AppShell from '@/app/components/AppShell';
 
+export const metadata = {
+  title: 'Casa do Ingresso - Sistema Staff'
+}
+
 export default function EventosPage(){
   return (
     <AppShell title="Cadastro de Eventos">
