@@ -328,6 +328,18 @@ export default function OperacionalCadastrarPage(){
             <label htmlFor="dataNascimento" className="text-black pt-2">Data de Nascimento</label>
             <input {...register("dataNascimento")} placeholder="00/00/0000" className="border p-2 rounded max-w-50" />
 
+            <label htmlFor="genero" className="text-black pt-2">Gênero</label>
+            <div className="flex gap-4">
+              <label className="flex items-center">
+                <input type="radio" {...register("genero")} value="Masculino" className="mr-2" />
+                <p className="text-black">Masculino</p>
+              </label>
+              <label className="flex items-center">
+                <input type="radio" {...register("genero")} value="Feminino" className="mr-2" />
+                <p className="text-black">Feminino</p>
+              </label>
+            </div>
+
             <label htmlFor="religiao" className="text-black pt-2">Religião</label>
             <select {...register("religiao")} className="border p-2 rounded text-black">
               <option value="">Selecione a religião</option>
@@ -389,7 +401,19 @@ export default function OperacionalCadastrarPage(){
             <input {...register("nomeMae")} placeholder="Completo sem abreviação" className="border p-2 rounded" />
 
             <label htmlFor="conjuge" className="text-black pt-2">Cônjuge</label>
-            <input {...register("conjuge")} placeholder="Completo sem abreviação" className="border p-2 rounded" />
+            <input {...register("conjuge")} placeholder="Nome do(a) cônjuge completo sem abreviação" className="border p-2 rounded" />
+
+            <label htmlFor="filhos" className="text-black pt-2">Tem filhos?</label>
+            <div className="flex gap-4">
+              <label className="flex items-center">
+                <input type="radio" {...register("filhos")} value="Sim" className="mr-2" />
+                <p className="text-black">Sim</p>
+              </label>
+              <label className="flex items-center">
+                <input type="radio" {...register("filhos")} value="Não" className="mr-2" />
+                <p className="text-black">Não</p>
+              </label>
+            </div>
 
             <label htmlFor="estadoCivil" className="text-black pt-2">Estado Civil</label>
             <select {...register("estadoCivil")} className="border p-2 rounded text-black">
