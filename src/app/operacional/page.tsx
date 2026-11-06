@@ -9,11 +9,11 @@ export const metadata = {
 
 export default function OperacionalPage(){
   const tiles = [
-    { href: '/operacional/cadastrar', label: 'Cadastrar Colaborador', icon: <PersonAddAlt1Icon fontSize="large" color="primary" /> },
-    { href: '/operacional/cadastrados', label: 'Lista de Colaboradores', icon: <PersonSearchIcon fontSize="large" color="primary" /> }
+    { href: '/operacional/cadastrar', label: 'Register Employee', icon: <PersonAddAlt1Icon fontSize="large" color="primary" /> },
+    { href: '/operacional/cadastrados', label: 'Employee List', icon: <PersonSearchIcon fontSize="large" color="primary" /> }
   ];
   return (
-    <AppShell title="Operacional">
+    <AppShell title="Operational">
       <p className="text-md text-black mb-6">Selecione entre as opções abaixo:</p>
       <div className="grid max-w-220 h-50 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {tiles.map(t => (

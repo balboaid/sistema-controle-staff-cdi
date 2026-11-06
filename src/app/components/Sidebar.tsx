@@ -12,14 +12,14 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import Image from "next/image";
 
 const items = [
-  { href: "/", label: "Visão Geral", icon: <HomeIcon /> },
-  { href: "/operacional", label: "Operacional", icon: <PeopleIcon /> },
-  { href: "/parceiros", label: "Parceiros", icon: <HandshakeIcon /> },
-  { href: "/eventos", label: "Eventos", icon: <CelebrationIcon /> },
-  { href: "/cruzamentos-pos", label: "Cruzamento Consulta (Pós)", icon: <DataExplorationIcon /> },
-  { href: "/cruzamentos-pre", label: "Cruzamento Contratação (Pré)", icon: <DataSaverOnIcon /> },
-  { href: "/perfil", label: "Perfil", icon: <AccountBoxIcon /> },
-  { href: "https://casadoingresso.com/", target: "_blank", label: "Site Oficial", icon: <LaunchIcon /> },
+  { href: "/", label: "Overview", icon: <HomeIcon /> },
+  { href: "/operacional", label: "Operational", icon: <PeopleIcon /> },
+  { href: "/parceiros", label: "Partners", icon: <HandshakeIcon /> },
+  { href: "/eventos", label: "Events", icon: <CelebrationIcon /> },
+  { href: "/cruzamentos-pos", label: "Cross-reference Query (Post)", icon: <DataExplorationIcon /> },
+  { href: "/cruzamentos-pre", label: "Cross-reference Hiring (Pre)", icon: <DataSaverOnIcon /> },
+  { href: "/perfil", label: "Profile", icon: <AccountBoxIcon /> },
+  { href: "https://casadoingresso.com/", target: "_blank", label: "Official Site", icon: <LaunchIcon /> },
 ];
 
 export default function Sidebar(){

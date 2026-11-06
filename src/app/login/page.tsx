@@ -23,7 +23,7 @@ export default function LoginPage() {
     if (res && !res.error) {
       router.push('/');
     } else {
-      alert('Usuário ou senha inválidos');
+      alert('Invalid username or password');
     }
   };
 
@@ -37,18 +37,18 @@ export default function LoginPage() {
             Login
           </h1>
           <label htmlFor="username" className="block text-lg font-medium text-gray-700 mb-2">
-            Usuário
+            User
           </label>
           <input
             type="text"
-            placeholder="Nome de Usuário"
+            placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             onFocus={(e) => e.target.placeholder = ''}
             className="border p-2 w-full border-gray-400 bg-[#FCFCFC] mb-4"
           />
           <label htmlFor="password" className="block text-lg font-medium text-gray-700 mb-2">
-            Senha
+            Password
           </label>
           <input
             type="password"
@@ -59,7 +59,7 @@ export default function LoginPage() {
             className="border p-2 w-full border-gray-400 bg-[#FCFCFC] mb-10"
           />
           <button type="submit" className="bg-black text-white p-2 rounded w-full hover:bg-[#336BB4]">
-            Entrar
+            Login
           </button>
         </form>
       </div>

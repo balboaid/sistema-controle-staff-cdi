@@ -12,16 +12,16 @@ export const metadata = {
 
 export default function Home(){
   const tiles = [
-    { href: '/operacional', label: 'Operacional', icon: <PeopleIcon fontSize="large" color="primary" /> },
-    { href: '/parceiros', label: 'Parceiros', icon: <HandshakeIcon fontSize="large" color="primary" /> },
-    { href: '/eventos', label: 'Eventos', icon: <CelebrationIcon fontSize="large" color="primary" /> },
-    { href: '/cruzamentos', label: 'Cruzamentos', icon: <DataExplorationIcon fontSize="large" color="primary" /> },
-    { href: '/perfil', label: 'Perfil', icon: <AccountBoxIcon fontSize="large" color="primary" /> },
+    { href: '/operacional', label: 'Operational', icon: <PeopleIcon fontSize="large" color="primary" /> },
+    { href: '/parceiros', label: 'Partners', icon: <HandshakeIcon fontSize="large" color="primary" /> },
+    { href: '/eventos', label: 'Events', icon: <CelebrationIcon fontSize="large" color="primary" /> },
+    { href: '/cruzamentos', label: 'Cross-references', icon: <DataExplorationIcon fontSize="large" color="primary" /> },
+    { href: '/perfil', label: 'Profile', icon: <AccountBoxIcon fontSize="large" color="primary" /> },
   ];
   return (
-    <AppShell title="Visão Geral">
-      <div className="text-3xl text-black font-bold mb-10">Controle Staff <br /><span className="text-[#336BB3] text-3xl font-bold">Casa do Ingresso</span></div>
-      <p className="text-md text-black mb-6">Selecione a função que deseja executar</p>
+    <AppShell title="Overview">
+      <div className="text-3xl text-black font-bold mb-10">Staff Control <br /><span className="text-[#336BB3] text-3xl font-bold">Casa do Ingresso</span></div>
+      <p className="text-md text-black mb-6">Select the function you want to execute</p>
       <div className="grid max-w-220 h-100 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {tiles.map(t => (
           <Link key={t.href} href={t.href} className="card text-center">

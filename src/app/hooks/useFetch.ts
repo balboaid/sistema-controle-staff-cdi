@@ -11,7 +11,7 @@ export default function useFetch<T>(url: string) {
 
     fetch(url)
       .then((res) => {
-        if (!res.ok) throw new Error("Erro ao buscar dados");
+        if (!res.ok) throw new Error("Error fetching data");
         return res.json();
       })
       .then((data) => mounted && setData(data))

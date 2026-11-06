@@ -6,10 +6,10 @@ export const metadata = {
 
 export default function PerfilPage(){
   return (
-    <AppShell title="Perfil">
+    <AppShell title="Profile">
       <div className="card max-w-xl">
-        <div className="font-semibold mb-2">Usuário</div>
-        <div className="text-sm text-gray-600">Em breve: dados do usuário logado e alterar senha.</div>
+        <div className="font-semibold mb-2">User</div>
+        <div className="text-sm text-gray-600">Coming soon: logged in user data and change password.</div>
       </div>
     </AppShell>
   );

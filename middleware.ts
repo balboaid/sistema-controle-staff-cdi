@@ -2,11 +2,11 @@ import { withAuth } from "next-auth/middleware";
 
 export default withAuth({
   pages: {
-    signIn: "/login", // para onde redirecionar se não estiver logado
+    signIn: "/login", // where to redirect if not logged in
   },
 });
 
-// Definir quais rotas precisam de proteção
+// Define which routes need protection
 export const config = {
   matcher: [
     "/",
